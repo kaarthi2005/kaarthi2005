@@ -58,7 +58,7 @@
 <!-- Streak card (streak-stats.demolab.com — no self-hosting needed) -->
 <p align="center">
   <img
-    src="https://streak-stats.demolab.com/?user=kaarthi2005&theme=tokyonight&background=0A101F&border=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=94A3B8&currStreakNum=E2E8F0&sideNums=E2E8F0&stroke=22D3EE&width=100%25"
+    src="https://streak-stats.demolab.com?user=kaarthi2005&theme=tokyonight&hide_border=true&background=0A101F"
     alt="GitHub Streak"
     width="100%"
   />
