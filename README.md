@@ -67,12 +67,13 @@
 <!-- Stats + Top Languages side-by-side (replace YOUR_VERCEL_INSTANCE) -->
 <p align="center">
   <img
-    src="https://YOUR_VERCEL_INSTANCE/api?username=kaarthi2005&show_icons=true&theme=tokyonight&bg_color=0A101F&border_color=22D3EE&title_color=22D3EE&icon_color=10B981&text_color=E2E8F0&hide_rank=true&include_all_commits=true&count_private=true"
+    src="https://github-readme-stats-eight-beta-95.vercel.app/api?username=kaarthi2005&show_icons=true&theme=tokyonight&bg_color=0A101F&border_color=22D3EE&title_color=22D3EE&icon_color=10B981&text_color=E2E8F0&hide_rank=true&include_all_commits=true&count_private=true"
     alt="Kaarthi's GitHub Stats"
     width="49%"
   />
+
   <img
-    src="https://YOUR_VERCEL_INSTANCE/api/top-langs/?username=kaarthi2005&layout=compact&theme=tokyonight&bg_color=0A101F&border_color=22D3EE&title_color=22D3EE&text_color=E2E8F0&langs_count=8"
+    src="https://github-readme-stats-eight-beta-95.vercel.app/api/top-langs/?username=kaarthi2005&layout=compact&theme=tokyonight&bg_color=0A101F&border_color=22D3EE&title_color=22D3EE&text_color=E2E8F0&langs_count=8"
     alt="Top Languages"
     width="49%"
   />
@@ -89,16 +90,15 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/kaarthi2005/kaarthi2005/output/snake-dark.svg"
+    srcset="https://raw.githubusercontent.com/kaarthi2005/kaarthi2005/output/github-snake-dark.svg"
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/kaarthi2005/kaarthi2005/output/snake-light.svg"
+    srcset="https://raw.githubusercontent.com/kaarthi2005/kaarthi2005/output/github-snake.svg"
   />
   <img
-    src="https://raw.githubusercontent.com/kaarthi2005/kaarthi2005/output/snake-dark.svg"
-    alt="Contribution snake"
-    width="100%"
+    alt="Contribution Snake"
+    src="https://raw.githubusercontent.com/kaarthi2005/kaarthi2005/output/github-snake.svg"
   />
 </picture>
 
