@@ -1,0 +1,48 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v6
+
+      - name: Generate GitHub stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&bg_color=0A101F&border_color=22D3EE&title_color=22D3EE&icon_color=10B981&text_color=E2E8F0&hide_rank=true&include_all_commits=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&bg_color=0A101F&border_color=22D3EE&title_color=22D3EE&text_color=E2E8F0&langs_count=8
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/stats.svg profile/top-langs.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "Update GitHub stats cards"
+          git push
